@@ -1,0 +1,4 @@
+2025-10-16 13:48:25.890422+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Erreur de syntaxe dans l'instruction SQL "[*]BIRTH_DATE ID"; attendu "BACKUP, BEGIN"
+Syntax error in SQL statement "[*]BIRTH_DATE ID"; expected "BACKUP, BEGIN"; SQL statement:
+BIRTH_DATE ID [42001-232]
