@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ContractService {
@@ -22,6 +23,9 @@ public class ContractService {
             contract.setStartDate(LocalDate.now());
         }
         return contractRepository.save(contract);
+    }
+    public Optional<Contract> getContractById(Long id) {
+        return contractRepository.findById(id);
     }
 
     public Contract updateCost(Contract contract, Double newCost) {

@@ -33,11 +33,11 @@ public class ContractController {
 
     @PutMapping("/{id}/cost")
     public ResponseEntity<Contract> updateCost(@PathVariable Long id, @RequestParam Double cost) {
-        return contractService.getActiveContractsFilteredByUpdateDate(null, LocalDate.MIN) // placeholder to get contract
-                .stream().filter(c -> c.getId().equals(id)).findFirst()
+        return contractService.getContractById(id)
                 .map(contract -> ResponseEntity.ok(contractService.updateCost(contract, cost)))
                 .orElse(ResponseEntity.notFound().build());
     }
+
 
     @GetMapping("/client/{clientId}")
     public ResponseEntity<List<Contract>> getContracts(
