@@ -55,8 +55,3 @@ H2 was chosen as an embedded database to simplify local setup while ensuring per
 Validation for dates, emails, phone numbers, and numeric fields ensures data integrity. 
 
 All endpoints follow RESTful principles and JSON format, supporting client and contract management, cost updates with timestamps, filtering active contracts, and computing sums efficiently.
-
-
-## Proof of Functionality
-
-in progress
